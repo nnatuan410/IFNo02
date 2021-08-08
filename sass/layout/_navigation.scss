@@ -1,0 +1,130 @@
+.navigation{
+    background-color: $color-white;
+    width: 100%;
+    @include responsive(phone){
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10rem;
+        background-color: $color-white;
+        z-index: 998;
+    }
+    &__checkbox{
+        display: none;
+    }
+    &__checkbox:checked~&__list{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+    &__button{
+        background-color: transparent;
+        width: 6.6rem;
+        height: 6.6rem;
+        display: none;
+        cursor: pointer;
+        @include responsive(phone){
+            display: block;
+            position: absolute;
+            top: 1.8rem;
+            right: 3.6rem;
+            z-index: 1000;
+        }
+    }
+    &__icon {
+        position: relative;
+        margin-top: 3rem;
+        &,
+        &::before,
+        &::after {
+            width: 6.4rem;
+            height: .8rem;
+            border-radius: 5px;
+            background-color:  #000000;
+            display: inline-block;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .25s;
+        }
+
+        &::before {
+            top: -1.6rem;
+        }
+
+        &::after {
+            top: 1.6rem;
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        padding: 4rem 0;
+
+        @include responsive(phone){
+            opacity: 0;
+            visibility: hidden;
+            flex-direction: column;
+            position: absolute;
+            top: 10rem;
+            width: 100%;
+            padding: 0;
+            height: 100vh;
+            background-color: rgba($color-white,.97);
+            transform: translateX(100%);
+            transition: transform .35s linear;
+        }
+    }
+    &__item{
+        width: 18rem;
+        height: 2.5rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        color: $color-text;
+        border-left: 2px solid $color-black;
+
+        transition: all .25s ease-in;
+        cursor: pointer;
+        @include responsive(phone){
+            width: 100%;
+            border-left: none;
+            height: 9rem;
+            border-top: 1px solid #cccccc;
+        }
+    }
+    &__item:hover{
+        background-color: $color-white-secondary;
+    }
+    &__item:hover &__link{
+        color: $color-primary;
+    }
+    &__item:last-child{
+        border-right: 2px solid $color-black;
+        @include responsive(phone){
+            border-right: none;
+            border-bottom: 1px solid #cccccc;
+        }
+    }
+    &__link{
+        color: $color-text;
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        transition: all .25s ease-in;
+        @include responsive(phone){
+            font-size: 3.2rem;
+        }
+    }
+    
+}

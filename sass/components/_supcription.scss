@@ -1,0 +1,91 @@
+.subcription{
+    padding: 6.5rem 0;
+    width: 100%;
+    &__lists{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        width: inherit;
+        // overflow-x: hidden;
+        @include responsive(phone){
+            flex-direction: column;
+        }
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: calc(33.33% - 1.6rem);
+        padding-bottom: 2rem;
+        color: $color-text;
+        border: .4rem solid $color-primary-border;
+        box-shadow: -1px 5px 15px 5px $color-boxshadow;
+        cursor: pointer;
+        transition: all .25s;
+        @include responsive(phone){
+            width: 100%;
+            margin-bottom:4.8rem;
+        }
+    }
+    &__img{
+        width: 100%;
+    }
+    &__name{
+        margin: 2.4rem 0;
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: .7;
+        @include responsive(phone){
+            font-size: 4.4rem;
+        }
+    }
+    &__price{
+        font-size: 3.2rem;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 3.8rem;
+        & span{
+            font-size: 4rem;
+        }
+        @include responsive(phone){
+            font-size: 6.4rem;
+            & span{
+                font-size: 8rem;
+            }
+        }
+    }
+    &__desc{
+        line-height: 1.1;
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 3rem;
+        text-align: center;
+        @include responsive(phone){
+            font-size: 3.2rem;
+        }
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 29.6rem;
+        height: 5rem;
+        font-size: 1.4rem;
+        color: $color-text;
+        font-weight: 700;
+        background-color: $color-white-button;
+        margin-top: auto;
+        @include responsive(phone){
+            font-size: 3.2rem;
+            max-width: 62.5rem;
+            height: 11rem;
+        }
+    }
+    &__list:hover{
+        transform: translateY(-.5rem);
+    }
+    &__list:hover &__btn{
+        background-image: $color-gradient;
+    }
+}
