@@ -8,6 +8,9 @@
         @include responsive(phone){
             grid-template-columns: repeat(3 ,1fr);
         }
+        @include responsive(phone-sm){
+            margin-top: 3.4rem;
+        }
     }
     &__item{
         cursor: pointer;

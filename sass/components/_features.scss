@@ -4,9 +4,15 @@
     justify-content: space-between;
     margin-top: 7rem;
     @include responsive(phone){
+        margin-top: 8.6rem;
         margin-left: 3.2rem;
         margin-right: 3.2rem;
         flex-direction: column;
+    }
+    @include responsive(phone-sm){
+        margin-top: 4.3rem;
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
     }
     &__img{
         width: 100%;
@@ -25,31 +31,47 @@
             padding-top: 6rem;
             padding-left: 0;
         }
+        @include responsive(phone-sm){
+            padding-top: 3rem;
+        }
     }
     &__title{
         font-weight: 700;
+        font-family: $font-verdana;
         font-size: 2.4rem;
         margin-bottom: 3.7rem;
         @include responsive(phone){
+            font-weight: 400;
             font-size: 4.8rem;
+            line-height: 1.5;
+        }
+        @include responsive(phone-sm){
+            font-size: 2.4rem;
         }
     }
     &__desc{
         line-height: 1.5;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 1.6rem;
+        font-family: $font-verdana;
         width: 100%;
         @include responsive(phone){
             font-size: 3.2rem;
+        }
+        @include responsive(phone-sm){
+            font-size: 1.6rem;
         }
         & span{
             float: right;
             padding-bottom: 2.2rem ;
             padding-left: 2.8rem;
+            @include responsive(tab-port){
+                width: 100%;
+                padding-left: 0;
+            }
             @include responsive(phone){
                 display: flex;
                 justify-content: center;
-                width: 100%;
                 padding: 0;
             }
         }
@@ -61,6 +83,10 @@
         @include responsive(phone){
             max-width: 51rem;
             margin-bottom: 8rem;
+        }
+        @include responsive(phone-sm){
+            max-width: 25.5rem;
+            margin-bottom: 4rem;
         }
     }
 }

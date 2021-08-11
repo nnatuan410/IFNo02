@@ -7,8 +7,19 @@
     max-width: 1080px;
     margin: 0 auto;
     overflow: hidden;
+
+    @include responsive(tab-land){
+       margin: 0 5.1rem;
+    }
+    @include responsive(tab-port){
+        margin: 0 3.84rem;
+     }
     @include responsive(phone){
         margin-left: 2.3rem;
         margin-right: 2.3rem;
+    }
+    @include responsive(phone-sm){
+        margin-left: 1.15rem;
+        margin-right: 1.15rem;
     }
 }

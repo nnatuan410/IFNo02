@@ -3,10 +3,29 @@
     padding-top: 6.8rem;
     border-top: 1px solid $color-white-button;
     border-bottom: 1px solid $color-white-button;
+    @include responsive(phone){
+        padding-top: 8.6rem;
+    }
+    @include responsive(phone-sm){
+        padding-top: 5.3rem;
+    }
+
 }
 .section-features{
     padding: 12rem 0 13.2rem 0;
+    @include responsive(phone){
+        padding-bottom: 26.4rem;
+    }
+    @include responsive(phone-sm){
+        padding: 6rem 0 13.2rem 0;
+    }
 }
 .section-items{
     padding: 6.8rem 0;
+    @include responsive(phone-sm){
+        padding: 3.4rem 0;
+    }
+}
+.active{
+    color: $color-primary!important;
 }
