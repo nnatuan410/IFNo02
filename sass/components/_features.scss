@@ -11,7 +11,8 @@
     &__img{
         max-width: 36rem;
         @include responsive(phone){
-                max-width: 100%;
+            max-width: 100%;
+            min-height: 1px;
         }
     }
     &__content{
@@ -43,6 +44,7 @@
         color: $color-text;
         @include responsive(phone){
             font-size: 1.6rem;
+            line-height: 1.8;
         }
         & span{
             float: right;

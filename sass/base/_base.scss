@@ -32,3 +32,26 @@ img{
     height: auto;
     vertical-align: bottom;
 }
+// CSS FIX FOR IE
+@media screen and (min-width:0\0) { 
+    .items{
+        &__list{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap:wrap;
+        }
+        &__item{
+            border: none;
+            width: 16.66%;
+            @include responsive(phone){
+                width: 33.33%;
+            }
+        }
+    }
+    .header__logo{
+        & img{
+            max-width: 18.7rem;
+        }
+    }
+}

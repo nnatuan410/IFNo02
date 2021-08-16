@@ -2,14 +2,15 @@
 .items{
     &__list{
         width: 100%;
-        display: grid;
         margin-top: 6.8rem;
-        grid-template-columns: repeat(6 ,1fr);
+        display: grid;          /* adjusted */
+        grid-template-columns: repeat( 6, 1fr );
         @include responsive(phone){
             grid-template-columns: repeat(3 ,1fr);
             margin-top: 3.8rem;
         }
     }
+
     &__item{
         cursor: pointer;
         overflow: hidden;
@@ -21,5 +22,27 @@
         width: 100%;
         object-fit: cover;
         transition: all .35s linear;
+    }
+}
+@media screen and (min-width:0\0) { 
+    .items{
+        &__list{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap:wrap;
+        }
+        &__item{
+            border: none;
+            width: 16.66%;
+            @include responsive(phone){
+                width: 33.33%;
+            }
+        }
+    }
+    .header__logo{
+        & img{
+            max-width: 18.7rem;
+        }
     }
 }
