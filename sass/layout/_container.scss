@@ -1,25 +1,17 @@
 .wrapper{
-    max-width: 1200px;
+    max-width: 1320px;
     margin: 0 auto;
-
+    padding: 0 6rem;
+    @include responsive(phone){
+      padding: 0;
+      overflow: hidden;
+    }
 }
 .container{
     max-width: 1080px;
     margin: 0 auto;
-    overflow: hidden;
-
-    @include responsive(tab-land){
-       margin: 0 5.1rem;
-    }
-    @include responsive(tab-port){
-        margin: 0 3.84rem;
-     }
+    // overflow: hidden;
     @include responsive(phone){
-        margin-left: 2.3rem;
-        margin-right: 2.3rem;
-    }
-    @include responsive(phone-sm){
-        margin-left: 1.15rem;
-        margin-right: 1.15rem;
+        margin: 1.15rem;
     }
 }

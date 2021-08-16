@@ -6,12 +6,9 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 10rem;
+        height: 7rem;
         background-color: $color-white;
         z-index: 998;
-    }
-    @include responsive(phone-sm){
-        height: 5rem;
     }
     &__checkbox{
         display: none;
@@ -23,43 +20,29 @@
     }
     &__button{
         background-color: transparent;
-        width: 6.6rem;
-        height: 6.6rem;
+        width: 3.3rem;
+        height: 3.3rem;
         display: none;
         cursor: pointer;
         @include responsive(phone){
             display: block;
             position: absolute;
             top: 1.8rem;
-            right: 3.6rem;
+            right: 1.85rem;
             z-index: 1000;
-        }
-        @include responsive(phone-sm){
-            width: 3.3rem;
-            height: 3.3rem;
-            top: .9rem;
-            right: 1.8rem;
         }
     }
     &__icon {
         position: relative;
-        margin-top: 3rem;
-        @include responsive(phone-sm){
-            margin-top: 1.5rem;
-        }
+        top: .8rem;
         &,
         &::before,
         &::after {
-            width: 6.4rem;
-            height: .8rem;
-            border-radius: 5px;
+            width: 3.3rem;
+            height: .55rem;
+            border-radius: 2.5px;
             background-color:  #000000;
             display: inline-block;
-            @include responsive(phone-sm){
-                width: 3.2rem;
-                height: .4rem;
-                border-radius: 2.5px;
-            }
         }
 
         &::before,
@@ -71,17 +54,11 @@
         }
 
         &::before {
-            top: -1.6rem;
-            @include responsive(phone-sm){
-                top: -.8rem;
-            }
+            top: -.8rem;
         }
 
         &::after {
-            top: 1.6rem;
-            @include responsive(phone-sm){
-                top: .8rem;
-            }
+            top: .8rem;
         }
     }
     &__list{
@@ -95,16 +72,13 @@
             visibility: hidden;
             flex-direction: column;
             position: absolute;
-            top: 10rem;
+            top: 7rem;
             width: 100%;
             padding: 0;
             height: 100vh;
             background-color: rgba($color-white,.97);
             transform: translateX(100%);
             transition: transform .35s linear;
-        }
-        @include responsive(phone-sm){
-            top: 5rem;
         }
     }
     &__item{
@@ -116,18 +90,15 @@
         justify-content: center;
         font-weight: 500;
         color: $color-text;
-        border-left: 2px solid $color-black;
+        border-left: .2rem solid #575757;
 
         transition: all .25s ease-in;
         cursor: pointer;
         @include responsive(phone){
             width: 100%;
             border-left: none;
-            height: 9rem;
-            border-top: 1px solid #cccccc;
-        }
-        @include responsive(phone-sm){
             height: 4.5rem;
+            border-top: .05rem solid #cccccc;
         }
     }
     &__item:hover{
@@ -137,7 +108,7 @@
         color: $color-primary;
     }
     &__item:last-child{
-        border-right: 2px solid $color-black;
+        border-right: .2rem solid #575757;
         @include responsive(phone){
             border-right: none;
             border-bottom: 1px solid #cccccc;
@@ -146,14 +117,11 @@
     &__link{
         color: $color-text;
         font-size: 1.6rem;
-        font-weight: 400;
+        font-weight: 500;
         text-transform: uppercase;
 
         transition: all .25s ease-in;
         @include responsive(phone){
-            font-size: 3.2rem;
-        }
-        @include responsive(phone-sm){
             font-size: 1.6rem;
         }
     }

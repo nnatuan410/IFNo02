@@ -1,0 +1,12 @@
+.is-sp{
+    display: none!important;
+    @include responsive(phone){
+        display: inline-block!important;
+    }
+}
+.is-pc{
+    display: inline-block!important;
+    @include responsive(phone){
+        display: none!important;
+    }
+}

@@ -2,10 +2,6 @@
     margin-top: 6.8rem;
     margin-bottom: .8rem;
     @include responsive(phone){
-        margin-top: 9.4rem;
-        margin-bottom: 5.8rem;
-    }
-    @include responsive(phone-sm){
         margin-top: 3.4rem;
         margin-bottom: 2.9rem;
     }
@@ -19,10 +15,7 @@
         color: $color-text;
         line-height: 1;
         @include responsive(phone){
-            font-weight: 600;
-            font-size: 2.56rem;
-        }
-        @include responsive(phone-sm){
+            font-weight: 700;
             font-size: 1.28rem;
         }
     }

@@ -1,5 +1,5 @@
 @import "../abstracts/mixins";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 *,
 *::before,
 *::after {
@@ -9,6 +9,12 @@
 }
 html {
     font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    @include responsive(scalePC){
+        font-size: calc(100vw / 120);
+    }
 }
 
 body{
@@ -19,4 +25,10 @@ body{
 }
 a{
     text-decoration: none;
+}
+img{
+    border: none;
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
 }

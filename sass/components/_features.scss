@@ -1,75 +1,56 @@
 .features{
     display: flex;
-    align-items: top;
     justify-content: space-between;
     margin-top: 7rem;
     @include responsive(phone){
-        margin-top: 8.6rem;
-        margin-left: 3.2rem;
-        margin-right: 3.2rem;
-        flex-direction: column;
-    }
-    @include responsive(phone-sm){
         margin-top: 4.3rem;
         margin-left: 1.6rem;
         margin-right: 1.6rem;
+        flex-direction: column;
     }
     &__img{
-        width: 100%;
         max-width: 36rem;
-        max-height: 29rem;
-        height: auto;
         @include responsive(phone){
-            max-width: none;
-            max-height: none;
+            max-width: 100%;
         }
     }
     &__content{
         color: $color-black;
         padding: .6rem 0 0 5.4rem;
         @include responsive(phone){
-            padding-top: 6rem;
-            padding-left: 0;
-        }
-        @include responsive(phone-sm){
             padding-top: 3rem;
+            padding-left: 0;
         }
     }
     &__title{
         font-weight: 700;
         font-family: $font-verdana;
+        color: $color-text;
         font-size: 2.4rem;
         margin-bottom: 3.7rem;
         @include responsive(phone){
             font-weight: 400;
-            font-size: 4.8rem;
-            line-height: 1.5;
-        }
-        @include responsive(phone-sm){
             font-size: 2.4rem;
+            line-height: 1.5;
         }
     }
     &__desc{
-        line-height: 1.5;
-        font-weight: 500;
-        font-size: 1.6rem;
-        font-family: $font-verdana;
         width: 100%;
+        font-family: $font-verdana;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1.6;
+        color: $color-text;
         @include responsive(phone){
-            font-size: 3.2rem;
-        }
-        @include responsive(phone-sm){
             font-size: 1.6rem;
         }
         & span{
             float: right;
             padding-bottom: 2.2rem ;
             padding-left: 2.8rem;
-            @include responsive(tab-port){
-                width: 100%;
-                padding-left: 0;
-            }
+            padding-top: .6rem;
             @include responsive(phone){
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 padding: 0;
@@ -77,15 +58,8 @@
         }
     }
     &__content-img{
-        width: 100%;
-        height: auto;
         max-width: 25.5rem;
         @include responsive(phone){
-            max-width: 51rem;
-            margin-bottom: 8rem;
-        }
-        @include responsive(phone-sm){
-            max-width: 25.5rem;
             margin-bottom: 4rem;
         }
     }

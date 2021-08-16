@@ -1,15 +1,14 @@
 .subcription{
     padding: 6.5rem 0;
     width: 100%;
-    @include responsive(phone-sm){
-       padding-top: 3.25rem;
+    @include responsive(phone){
+       padding: 3.25rem 0;
     }
     &__lists{
         display: flex;
         align-items: stretch;
         justify-content: space-between;
         width: inherit;
-        // overflow-x: hidden;
         @include responsive(phone){
             flex-direction: column;
         }
@@ -22,21 +21,14 @@
         padding-bottom: 2rem;
         color: $color-text;
         border: .4rem solid $color-primary-border;
-        box-shadow: -1px 5px 15px 5px $color-boxshadow;
+        box-shadow: -1px 5px 15px 2px $color-boxshadow;
         cursor: pointer;
         transition: all .25s;
         overflow: hidden;
-        @include responsive(tab-port){
-            padding-bottom: 1.28rem;
-            width: calc(33.33% - 1rem);
-        }
         @include responsive(phone){
             width: 100%;
-            margin-bottom:4.8rem;
-            padding-bottom: 2rem;
-        }
-        @include responsive(phone-sm){
-            margin-bottom:2.4rem;
+            margin-bottom: 2.4rem;
+            padding-bottom: 1.65rem;
         }
     }
     &__img{
@@ -47,15 +39,9 @@
         font-size: 2.2rem;
         font-weight: 700;
         line-height: .7;
-        @include responsive(tab-port){
-            margin: 2rem 0;
-        }
         @include responsive(phone){
-            margin: 2.4rem 0;
-            font-size: 4.4rem;
-        }
-        @include responsive(phone-sm){
-            font-size: 2.2rem;
+            margin: 2.1rem 0;
+            font-size: 2.4rem;
         }
     }
     &__price{
@@ -66,18 +52,9 @@
         & span{
             font-size: 4rem;
         }
-        @include responsive(tab-port){
-            margin-bottom: 2.4rem;
-        }
         @include responsive(phone){
-            margin-bottom: 3.8rem;
-            font-weight: 600;
-            font-size: 6.4rem;
-            & span{
-                font-size: 8rem;
-            }
-        }
-        @include responsive(phone-sm){
+            margin-bottom: 2.9rem;
+            font-weight: 700;
             font-size: 3.2rem;
             & span{
                 font-size: 4rem;
@@ -85,48 +62,34 @@
         }
     }
     &__desc{
-        line-height: 1.1;
+        line-height: 1;
         font-size: 1.4rem;
-        font-weight: 400;
+        font-weight: 500;
         margin-bottom: 3rem;
         text-align: center;
-        @include responsive(tab-port){
-            margin-bottom: 2.4rem;
-        }
         @include responsive(phone){
-            margin-bottom: 3rem;
-            font-size: 3.2rem;
-        }
-        @include responsive(phone-sm){
+            margin-bottom: 2.75rem;
             font-size: 1.6rem;
         }
     }
     &__btn{
-        display: flex;
+    
+        display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
-        max-width: 29.6rem;
+        width: 29.6rem;
         height: 5rem;
         font-size: 1.4rem;
         color: $color-text;
-        font-weight: 700;
+        font-weight: 800;
         background-color: $color-white-button;
         margin-top: auto;
-        @include responsive(tab-land){
-            width: 90%;
-        }
         @include responsive(phone){
-            font-size: 3.2rem;
-            max-width: 62.5rem;
-            height: 11rem;
-        }
-        @include responsive(phone-sm){
             font-size: 1.6rem;
-            max-width: 31.25rem;
-            height: 5.5rem;
+            width: 31.3rem;
+            height: 5.6rem;
+            background-color: #f6f6f6;
         }
-
     }
     &__list:hover{
         transform: translateY(-.5rem);
