@@ -1,20 +1,22 @@
 .subcription{
-    padding: 6.5rem 0;
-    width: 100%;
-    @include responsive(phone){
-       padding: 3.25rem 0;
-    }
-    &__lists{
-        display: flex;
-        align-items: stretch;
-        justify-content: space-between;
-        width: inherit;
+    // &__lists{
+    //     padding: 6.5rem 0;
+    //     width: 100%;
+    //     @include responsive(phone){
+    //         flex-direction: column;
+    //         padding: 3.25rem 0;
+    //     }
+    // }
+    &__subtitle{
         @include responsive(phone){
-            flex-direction: column;
+            margin-bottom: 3.25rem;
         }
     }
+    &__list:not(:last-child){
+        margin-right: 2.1rem;
+    }
     &__list{
-        display: flex;
+        display: inline-flex;
         align-items: center;
         flex-direction: column;
         width: calc(33.33% - 1.6rem);
@@ -25,9 +27,10 @@
         cursor: pointer;
         transition: all .25s;
         overflow: hidden;
+        margin: 6.5rem 0;
         @include responsive(phone){
             width: 100%;
-            margin-bottom: 2.4rem;
+            margin: 0 0 2.4rem;
             padding-bottom: 1.65rem;
         }
     }

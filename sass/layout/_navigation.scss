@@ -111,7 +111,7 @@
         border-right: .2rem solid #575757;
         @include responsive(phone){
             border-right: none;
-            border-bottom: 1px solid #cccccc;
+            border-bottom: .05rem solid #cccccc;
         }
     }
     &__link{
@@ -123,6 +123,7 @@
         transition: all .25s ease-in;
         @include responsive(phone){
             font-size: 1.6rem;
+            font-weight: 600;
         }
     }
     
