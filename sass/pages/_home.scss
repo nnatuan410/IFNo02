@@ -19,6 +19,27 @@
         padding: 6.65rem 0 4.7rem;
     }
 }
+.section-kv{
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: -.3rem;
+    max-width: 108rem;
+    @include responsive(phone){
+        margin: 7rem -1.15rem 0;
+    }
+    &__title{
+        position: absolute;
+        max-width: 24.2rem;
+        top: 5.2rem;
+        right: 10rem;
+        @include responsive(phone){
+            top: 2.6rem;
+            right: 1.5rem;
+            max-width: 12.1rem;
+        }
+    }
+}
 .active{
     color: $color-primary!important;
 }

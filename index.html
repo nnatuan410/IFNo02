@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS link -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>TAKAOSAN</title>
 </head>
 <body>
@@ -17,33 +19,36 @@
                         <img src="./images/takaosan-logo-pc.png" class="is-pc" alt="">
                         <img src="./images/takaosan-logo-sp.png" class="is-sp" alt="">
                     </div>
-                    <div class="header__slide">
-                        <img src="./images/kv.png" class="is-pc" alt="">
-                        <img src="./images/kv-sp.png" class="is-sp" alt="">
-                        <h1>
-                            <img src="./images/takaosan-title.png" class="header__slide-title" alt="">
-                        </h1>
-                    </div>
-                    <nav class="navigation">
-                        <div class="navigation__nav">
-                            <input type="checkbox" class="navigation__checkbox" id="navtoggle">
-                            <label for="navtoggle" class="navigation__button">
-                                <span class="navigation__icon"></span>
-                            </label>
-                            <ul class="navigation__list">
-                                <li class="navigation__item"><a href="#" class="navigation__link active">Home</a></li>
-                                <li class="navigation__item"><a href="#"  class="navigation__link">About</a></li>
-                                <li class="navigation__item"><a href="#" 
-                                class="navigation__link">Shop</a></li>
-                                <li class="navigation__item"><a href="#"  class="navigation__link">Access</a></li>
-                                <li class="navigation__item"><a href="#"  class="navigation__link">Blog</a></li>
-                                <li class="navigation__item"><a href="#"  class="navigation__link">Contact</a></li>
-                            </ul>
-                        </div>
-                    </nav>
             </header>
+            <!-- ============ KV =============== -->
+            <section class="section-kv">
+                <img src="./images/kv.png" class="is-pc" alt="">
+                <img src="./images/kv-sp.png" class="is-sp" alt="">
+                <h1>
+                    <img src="./images/takaosan-title.png" class="section-kv__title" alt="">
+                </h1>
+            </section>
+            <!-- ============ NAVIGATION =============== -->
+            <section class="navigation">
+                <nav class="navigation__nav">
+                    <input type="checkbox" class="navigation__checkbox" id="navtoggle">
+                    <label for="navtoggle" class="navigation__button">
+                        <span class="navigation__icon"></span>
+                    </label>
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="#" class="navigation__link active">Home</a></li>
+                        <li class="navigation__item"><a href="#"  class="navigation__link">About</a></li>
+                        <li class="navigation__item"><a href="#" 
+                        class="navigation__link">Shop</a></li>
+                        <li class="navigation__item"><a href="#"  class="navigation__link">Access</a></li>
+                        <li class="navigation__item"><a href="#"  class="navigation__link">Blog</a></li>
+                        <li class="navigation__item"><a href="#"  class="navigation__link">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
             <!-- ============ NEW =============== -->
-            <section class="section-news news">
+            <section class="section-news">
+                <div class="news">
                     <h2 class="heading-primary">
                         news
                     </h2>
@@ -64,20 +69,19 @@
                             <span class="news__date">
                                 2018.06.30
                             </span>
-                            <a href="#" class="news__link">
-                                Information on the snowmobile athletic meet tour.
-                            </a>
+                            <a href="#" class="news__link">Information on the snowmobile athletic meet tour.</a>
                         </div>
                         <div class="news__list">
                             <span class="news__date">
                                 2018.06.30
                             </span>
                             <a href="#" class="news__link">
-                                The TAKAOSAN online shop has opened.Online coupons are being 
+                                The TAKAOSAN online shop has opened. Online coupons are being 
                                 distributed for a limited time. Do not miss it!
                             </a>
                         </div>
                     </div>
+                </div>
             </section>
             <!-- ============ FEATURES ========== -->
             <section class="section-features">
@@ -115,25 +119,31 @@
                     We run a flat-rate service that we will send recommended items every month to you. It's free for the first month so you can start with confidence.
                 </p>
                 <div class="subcription__list">
-                    <img src="./images/subscription-starter-image.jpg" alt="" class="subcription__img">
+                    <div>
+                        <img src="./images/subscription-starter-image.jpg" alt="" class="subcription__img">
+                    </div>
                     <h4 class="subcription__name">Starter</h4>
-                    <span class="subcription__price">¥ <span>2,400</span> /m</span>
-                    <span class="subcription__desc">Starter pack to begin easily</span>
-                    <a href="#" class="subcription__btn">more detail</a>
+                    <p class="subcription__price">¥ <span>2,400</span> /m</p>
+                    <p class="subcription__desc">Starter pack to begin easily</p>
+                    <p><a href="#" class="subcription__btn">more detail</a></p>
                 </div>
                 <div class="subcription__list">
-                    <img src="./images/subscription-standard-image.jpg" alt="" class="subcription__img">
+                    <div>
+                        <img src="./images/subscription-standard-image.jpg" alt="" class="subcription__img">
+                    </div>
                     <h4 class="subcription__name">Standard</h4>
-                    <span class="subcription__price">¥ <span>7,800</span> /m</span>
-                    <span class="subcription__desc">Recommended standard pack</span>
-                    <a href="#" class="subcription__btn">more detail</a>
+                    <p class="subcription__price">¥ <span>7,800</span> /m</p>
+                    <p class="subcription__desc">Recommended standard pack</p>
+                    <p><a href="#" class="subcription__btn">more detail</a></p>
                 </div>
                 <div class="subcription__list">
-                    <img src="./images/subscription-master-image.jpg" alt="" class="subcription__img">
+                    <div>
+                        <img src="./images/subscription-master-image.jpg" alt="" class="subcription__img">
+                    </div>
                     <h4 class="subcription__name">Master</h4>
-                    <span class="subcription__price">¥ <span>16,400</span> /m</span>
-                    <span class="subcription__desc">We will deliver a high brand monthly</span>
-                    <a href="#" class="subcription__btn">more detail</a>
+                    <p class="subcription__price">¥ <span>16,400</span> /m</p>
+                    <p class="subcription__desc">We will deliver a high brand monthly</p>
+                    <p><a href="#" class="subcription__btn">more detail</a></p>
                 </div>
             </section>
             <!-- ============= ITEMS ============= -->
@@ -141,44 +151,44 @@
                 <h2 class="heading-primary">
                     items
                 </h2>
-                <div class="items__list">
-                    <div class="items__item">
+                <ul class="items__list">
+                    <li class="items__item">
                         <img src="./images/items-image01.png" class="items__img"  alt="">
-                    </div>
-                    <div class="items__item">
+                    </li>
+                    <li class="items__item">
                         <img src="./images/items-image02.png" class="items__img" alt="">
-                    </div>
-                    <div class="items__item">
+                    </li>
+                    <li class="items__item">
                         <img src="./images/items-image03.png" class="items__img" alt="">
-                    </div>
-                    <div class="items__item">
+                    </li>
+                    <li class="items__item">
                         <img src="./images/items-image04.png" class="items__img" alt="">
-                    </div>
-                    <div class="items__item">
+                    </li>
+                    <li class="items__item">
                         <img src="./images/items-image05.png" class="items__img" alt="">
-                    </div>
-                    <div class="items__item">
+                    </li>
+                    <li class="items__item">
                         <img src="./images/items-image06.png" class="items__img" alt="">
-                    </div>
-                    <div class="items__item">
+                    </li>
+                    <li class="items__item">
                         <img src="./images/items-image07.png" class="items__img" alt="">
-                    </div>
-                    <div class="items__item">
+                    </li>
+                    <li class="items__item">
                         <img src="./images/items-image08.png" class="items__img" alt="">
-                    </div>
-                    <div class="items__item">
+                    </li>
+                    <li class="items__item">
                         <img src="./images/items-image09.png" class="items__img" alt="">
-                    </div>
-                    <div class="items__item">
+                    </li>
+                    <li class="items__item">
                         <img src="./images/items-image10.png" class="items__img" alt="">
-                    </div>
-                    <div class="items__item">
+                    </li>
+                    <li class="items__item">
                         <img src="./images/items-image11.png" class="items__img" alt="">
-                    </div>
-                    <div class="items__item">
+                    </li>
+                    <li class="items__item">
                         <img src="./images/items-image12.png" class="items__img" alt="">
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </section>
             <!-- ============== Footer =========== -->
             <footer class="footer footer__text">
@@ -186,5 +196,7 @@
             </footer>
         </div>
     </div>
+    <!-- script link -->
+    <script src="./scripts/index.js"></script>
 </body>
 </html>

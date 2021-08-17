@@ -19,6 +19,7 @@
         @include responsive(phone){
             flex-direction: column;
             padding-left: 2.4rem;
+            padding-right: 2.4rem;
         }
 
     }
